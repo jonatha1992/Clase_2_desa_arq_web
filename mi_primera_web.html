@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Mi Página Web Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <h1 id="mi-nombre" style="cursor:pointer;">Jonathan Gabriel Correa</h1>
+    <h2>Sobre Mi</h2>
+    <p id="parrafo-sobre-mi">Hola, soy Jonathan Gabriel Correa, tengo 20 años y soy estudiante de ingeniería en sistemas
+        computacionales.</p>
+    <h2>Mis Hobbies</h2>
+    <ul>
+        <li>Programación</li>
+        <li>Videojuegos</li>
+        <li>Lectura</li>
+    </ul>
+
+    <h2>Mi Horario</h2>
+    <table>
+        <tr>
+            <th>Materia</th>
+            <th>Profesor</th>
+            <th>Horario</th>
+        </tr>
+        <tr>
+            <td>Programación</td>
+            <td>Juan Pérez</td>
+            <td>Lunes 8:00-10:00</td>
+        </tr>
+        <tr>
+            <td>Base de Datos</td>
+            <td>María López</td>
+            <td>Martes 10:00-12:00</td>
+        </tr>
+        <tr>
+            <td>Sistemas Operativos</td>
+            <td>Carlos Rodríguez</td>
+            <td>Jueves 14:00-16:00</td>
+        </tr>
+    </table>
+
+    <h2>Mi Foto</h2>
+    <img src="assets/1729966667863.jpeg" alt="Mi foto personal" width="200" height="200">
+
+    <h2>Enlaces de Interés</h2>
+    <p>Visita <a href="https://www.google.com" target="_blank">Google</a> para más información.</p>
+
+    <h2>Formulario de Contacto</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+        Género:<br>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="otro" name="genero" value="Otro">
+        <label for="otro">Otro</label><br><br>
+        <label for="materia">Materia:</label>
+        <select id="materia" name="materia">
+            <option value="Programación">Programación</option>
+            <option value="Base de Datos">Base de Datos</option>
+            <option value="Sistemas Operativos">Sistemas Operativos</option>
+        </select><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
